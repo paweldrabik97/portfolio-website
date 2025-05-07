@@ -6,8 +6,10 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #0f0f0f;
   color: #fff;
+  z-index: 3;
+  background: transparent;
+  pointer-events: none;
 }
 
 .main-banner-title {
@@ -17,6 +19,7 @@
   max-width: 800px;
   text-align: center;
   margin-top: 0rem;
+  z-index: 3;
 }
 
 .main-banner-subtitle {
@@ -25,6 +28,7 @@
   margin-bottom: 0rem;
   max-width: 800px;
   text-align: center;
+  z-index: 3;
 }
 
 .main-banner-description {
@@ -33,6 +37,7 @@
   margin-bottom: 1.5rem;
   max-width: 800px;
   text-align: center;
+  z-index: 3;
 }
 
 p {
@@ -46,11 +51,13 @@ p {
   font-weight: 400;
   line-height: 45px;
   text-decoration: none;
+  z-index: 3;
 }
 
 .cv-container {
   margin: 0 2em;
   transition: all 1s;
+  z-index: 3;
   &:hover {
     background-color: #44444448;
     box-shadow: 0 0 60px #444444;
@@ -63,12 +70,15 @@ p {
 
 .cv-text {
   margin-left: 0.5rem;
+  z-index: 3;
 }
 
 .main-banner-buttons {
   display: block;
   justify-content: space-evenly;
   text-align: justify;
+  z-index: 3;
+  pointer-events: auto;
 }
 
 @keyframes blurry {
@@ -124,4 +134,35 @@ p {
   filter: blur(1rem);
   visibility: hidden;
   animation: blurry 0.5s ease-in-out 2s forwards;
+}
+
+.current-technologies {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  margin: 2rem auto;
+  padding: 2rem;
+  max-width: 80rem;
+}
+
+.current-technologies-h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.current-technologies-p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+.my-portfolio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  margin: 2rem auto;
+  padding: 2rem;
+  max-width: 80rem;
 }

@@ -1,13 +1,17 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import "./Styles/App.scss";
-import Btn from "./Components/Btn";
+import Btn from "./Components/Btn/Btn";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
+import Technology from "./Components/Technology/Technology";
+import BackgroundGrid from "./Components/BackgroundGrid/BackgroundGrid";
+import TechnologySection from "./Components/TechnologySection/TechnologySection";
+import PortfolioSection from "./Components/PortfolioSection/PortfolioSection";
 
 function App() {
   return (
     <>
-      <div className="main-banner">
+      <div className="main-banner" id="home">
         <div className="main-banner-subtitle">
           <p>BASED IN KRAKOW, POLAND</p>
         </div>
@@ -34,6 +38,20 @@ function App() {
             </a>
           </span>
         </div>
+      </div>
+      <BackgroundGrid />
+      <div className="current-technologies">
+        <h1 className="current-technologies-h1">Current technologies</h1>
+        <p className="current-technologies-p">
+          I'm proficient in a range of modern technologies that empower me to
+          build highly functional solutions. These are some of my main
+          technologies.
+        </p>
+        <TechnologySection />
+      </div>
+      <div className="my-portfolio">
+        <h2 className="my-portfolio-h2">My portfolio</h2>
+        <PortfolioSection />
       </div>
     </>
   );

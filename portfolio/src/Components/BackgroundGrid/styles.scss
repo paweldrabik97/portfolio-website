@@ -1,0 +1,28 @@
+.background-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  pointer-events: auto; /* lub none, jeśli nie chcesz interakcji */
+  overflow: hidden;
+}
+
+.row {
+  display: flex;
+}
+
+.box {
+  width: 30px;
+  height: 30px;
+  background-color: #0a0a0a;
+  transition: background-color 0.1s ease-out;
+  border: #0c0c0c solid 1px;
+}
+
+.box:hover {
+  background-color: #ff00002c;
+}
