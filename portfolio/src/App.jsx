@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import "./Styles/App.scss";
 import Btn from "./Components/Btn/Btn";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faDownload } from "@fortawesome/free-solid-svg-icons";
-import Technology from "./Components/Technology/Technology";
+import { faDownload, faStar } from "@fortawesome/free-solid-svg-icons";
 import BackgroundGrid from "./Components/BackgroundGrid/BackgroundGrid";
 import TechnologySection from "./Components/TechnologySection/TechnologySection";
 import PortfolioSection from "./Components/PortfolioSection/PortfolioSection";
+import TestimonialsSlider from "./Components/TestimonialsSlider/TestimonialsSlider";
 
 function App() {
   return (
@@ -52,6 +52,16 @@ function App() {
       <div className="my-portfolio">
         <h2 className="my-portfolio-h2">My portfolio</h2>
         <PortfolioSection />
+      </div>
+      <div className="reviews-section">
+        <div className="stars">
+          <FontAwesomeIcon icon={faStar} />
+          <FontAwesomeIcon icon={faStar} />
+          <FontAwesomeIcon icon={faStar} />
+          <FontAwesomeIcon icon={faStar} />
+          <FontAwesomeIcon icon={faStar} />
+        </div>
+        <TestimonialsSlider />
       </div>
     </>
   );

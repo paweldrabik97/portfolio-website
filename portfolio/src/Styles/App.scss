@@ -166,3 +166,27 @@ p {
   padding: 2rem;
   max-width: 80rem;
 }
+
+.my-portfolio-h2 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.reviews-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  margin: 2rem auto;
+  padding: 2rem;
+  max-width: 80rem;
+}
+
+.stars {
+  color: #008cff;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  justify-content: center;
+  display: flex;
+  gap: 0.8rem;
+}

@@ -6,14 +6,14 @@ const PortfolioSection = () => {
   return (
     <div className="portfolio-section">
       <PortfolioItem
-        title="Intel 8086 Simulator"
-        imgSrc="../../assets/IntelSim.png"
-        imgAlt="Processor simulator"
-        techStack={["React", "Node.js", "TypeScript", "Sass"]}
+        title="Wojczella Festival Website"
+        imgSrc="src/assets/wojczella.jpg"
+        imgAlt="Festival website"
+        techStack={["React", "TailwindCSS", "JavaScript", "SCSS"]}
       />
       <PortfolioItem
         title="Intel 8086 Simulator"
-        imgSrc="../../assets/IntelSim.png"
+        imgSrc="src/assets/IntelSim.png"
         imgAlt="Processor simulator"
         techStack={["React", "Node.js", "TypeScript", "Sass"]}
       />
