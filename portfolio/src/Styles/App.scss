@@ -182,11 +182,163 @@ p {
   max-width: 80rem;
 }
 
-.stars {
+.testimonial-stars {
   color: #008cff;
   font-size: 2rem;
   margin-bottom: 0.5rem;
   justify-content: center;
   display: flex;
   gap: 0.8rem;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 80rem;
+  height: 30rem;
+  margin: 1rem auto;
+  overflow: hidden;
+  border: #242424 1px solid;
+  border-radius: 1rem;
+}
+
+.star-background {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-text {
+  position: absolute;
+  color: #fff;
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  height: 30rem;
+}
+
+.contact-div {
+  display: flex;
+  flex-direction: column;
+  z-index: 3;
+  max-width: 76rem;
+  width: 100%;
+  margin: auto;
+  justify-content: left;
+  color: #fff;
+  @media (max-width: 768px) {
+    margin: auto;
+    max-width: 80%;
+  }
+}
+h3.contact-header {
+  display: flex;
+  font-size: 2.5rem;
+  max-width: 50rem;
+
+  @media (max-width: 768px) {
+    font-size: 2rem;
+  }
+}
+
+.footer-credits {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 76rem;
+  border-top: #242424 1px solid;
+  height: 10rem;
+  @media (max-width: 768px) {
+    margin: auto;
+    max-width: 80%;
+  }
+}
+.footer-rights {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  gap: 1rem;
+  color: #fff;
+  width: 15%;
+}
+
+.footer-rights p {
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: left;
+  margin: 0;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  gap: 2rem;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  color: #fff;
+}
+
+.footer-nav-link {
+  z-index: 3;
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
+.footer-nav-link:hover {
+  color: #008cff;
+  transition: all 0.3s ease-in-out;
+}
+
+.education-h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  margin-top: 0rem;
+}
+
+.education {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  margin: 1rem auto;
+  padding: 2rem;
+  max-width: 80rem;
+  border: #242424 1px solid;
+  border-radius: 1rem;
+  background: #0e0e0e;
+}
+
+.education-item-title {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.education-item-field {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.education-item-description {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.education-item-date {
+  font-size: 1.2rem;
+  font-weight: 300;
 }

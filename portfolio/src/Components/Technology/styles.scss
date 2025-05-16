@@ -12,6 +12,14 @@
   border: #222222 solid 1px;
 }
 
+@media (max-width: 768px) {
+  .tech-stack-item {
+    max-width: 90%;
+
+    max-height: 3.5rem;
+  }
+}
+
 .tech-stack-item:hover {
   background-color: #2e2e2e;
   border: #4d4d4d solid 1px;
@@ -37,7 +45,7 @@
 }
 
 .tech-title {
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 600;
   color: #fff;
   text-align: center;

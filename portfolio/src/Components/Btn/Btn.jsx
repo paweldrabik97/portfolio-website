@@ -6,8 +6,12 @@ import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 class Btn extends React.Component {
   render() {
     return (
-      <a className="btn btn-1" href={this.props.url}>
-        <span>
+      <a
+        className="btn btn-1"
+        href={this.props.url}
+        target={this.props.target ? "_blank" : "_self"}
+      >
+        <span className="btn-text">
           {this.props.text} <FontAwesomeIcon icon={faChevronRight} />
         </span>
       </a>
